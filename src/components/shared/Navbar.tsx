@@ -1,3 +1,6 @@
+import logo from "@/assets/book.ico";
+import Image from "next/image";
+
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -44,33 +47,21 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="flex items-center gap-2">
+          <Image src={logo} alt="logo" width={50} height={50} />
+          Book Vibe
+        </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+
+      <ul className="flex items-center gap-6 navbar-center">
+        <li>Home</li>
+        <li>Listed Books</li>
+        <li>page to read</li>
+      </ul>
+
+      <div className="navbar-end gap-2">
+        <button className="btn  btn-success text-white">Sign In</button>
+        <button className="btn  btn-info text-white">Sign Up</button>
       </div>
     </div>
   );
