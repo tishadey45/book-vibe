@@ -60,7 +60,7 @@ export default function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/books">Listed Books</Link>
+          <Link href="/listed-books">Listed Books</Link>
         </li>
         <li>
           <Link href="/read">page to read</Link>

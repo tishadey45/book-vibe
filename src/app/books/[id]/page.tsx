@@ -1,5 +1,9 @@
+
+
 import { IBook } from "@/types/books.type";
 import Image from "next/image";
+import ReadButton from "@/components/bookDetails/ReadButton";
+import Wishlist from "@/components/bookDetails/WishList";
 
 interface IBookDetailsPageProps {
   params: Promise<{
@@ -120,14 +124,12 @@ export default async function BooksDetailsPage({
             <div className="card-body">
               <p className="text-xs text-base-content/50">Rating</p>
               <p className="mt-1 font-bold">⭐ {book.rating}</p>
-              <div className="card-actions justify-end">
-            <button className="btn btn-success   text-white">
-              Listen
-            </button>
-          </div>
             </div>
           </div>
-          
+          <div className="card-actions mt-3">
+            <ReadButton book={book}/>
+           <Wishlist book={book}/>
+          </div>
         </div>
       </div>
     </div>

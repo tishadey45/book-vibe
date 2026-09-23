@@ -51,7 +51,10 @@ NextJS Documentation:https://nextjs.org/docs/app/getting-started/installation
 5.>
 
 
+
+
 ** Resource file theke json file book-vibe project public foldere rakte hobe.
 
 
 src>types>books.type.ts> books data type
+src>context>BookContext.tsx> book context
