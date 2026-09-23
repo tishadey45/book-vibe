@@ -40,7 +40,18 @@ NextJS Documentation:https://nextjs.org/docs/app/getting-started/installation
 3.daisyui>next js> npm install tailwindcss @tailwindcss/postcss daisyui@latest
 4.PostCSS config file>  '@tailwindcss/postcss': {},
 5.app>globals.css> tailwind and daisyui import
+6.app>books/[id]/page.tsx> book details page
 
 <!-- src>components>shared -->
 
 1.components>shared>Navbar.tsx> 
+2.components>homePage>Banner.tsx>
+3.components>homePage>Books.tsx>
+4.components>shared>BookCard.tsx>
+5.>
+
+
+** Resource file theke json file book-vibe project public foldere rakte hobe.
+
+
+src>types>books.type.ts> books data type

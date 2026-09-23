@@ -1,5 +1,6 @@
 import logo from "@/assets/book.ico";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -29,7 +30,7 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <>Books</>
             </li>
             <li>
               <a>Parent</a>
@@ -53,11 +54,19 @@ export default function Navbar() {
         </div>
       </div>
 
-      <ul className="flex items-center gap-6 navbar-center">
-        <li>Home</li>
-        <li>Listed Books</li>
-        <li>page to read</li>
+     <div className="flex items-center gap-6">
+       <ul className="flex items-center gap-6 navbar-center">
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/books">Listed Books</Link>
+        </li>
+        <li>
+          <Link href="/read">page to read</Link>
+        </li>
       </ul>
+     </div>
 
       <div className="navbar-end gap-2">
         <button className="btn  btn-success text-white">Sign In</button>
